@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title class="owner-name">#</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand owner-name" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="github" target="_blank">Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#projects">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- First Container -->
+    <div class="container-fluid bg-1">
+        <div class="container">
+
+            <h1 class="margin text-center">Freedom Project</h1>
+            <h2>Context</h2>
+           I am a student at <a href="https://www.hstat.org/">HSTAT</a>in the [Software Engineering Program](https://hstatsep.github.io/). The "Freedom Project" for SEP10 is a year-long project all about making a website that informs the viewer of the current and future innovations in the topic of my choosing. For my project, I chose the topic of <b>Aviation</b>. I used HTML, CSS, Bootstrap, and Github. I also chose to independently study **A-Frame** in order to help me make my website.
+            <h2>Content</h2>
+            My invention, the <b>PilotVision Glasses</b>, assists pilots by displaying important information in front of their eyes, leading to less stress in a flying enviornment. My Website is minimal and doesn't present the viewer with too much information, keeping it simple. The glasses could replace some important things in the cockpit that were developed by human beings, with jobs, such as the Heads-Up Display. The glasses also have a Built-In Assistant, meaning the need for more than 2 pilots in a cockpit is uneccesary.
+            <br>
+            <br>
+            <h2>Reflection</h2>
+            <br>
+            <h3>Challenges</h3>
+            <p>One major challenge that I faced during making my MVP was putting my A-Frame scene on my website, which gives a visual of my glasses. The goal was to have an embed of my A-Frame scene as an interactive image, next to the description of the glasses.</p>
+            <pre><code class="language-html">
+                <div class="col-lg-6">
+                    <a-scene embedded>
+
+                        <a-entity camera wasd-controls look-controls position="0 1.6 5"></a-entity>
+
+                    <!-- my a-frame scene -->
+
+                    </a-scene>
+                </div>
+            </code></pre>
+            <p>This resulted in the embed of the A-Frame popping up, but the scene would never load. When you first enter a website with an A-Frame embed on it, it displys a blue screen with 3 loading white dots, and this usually would take a couple seconds for the scene to load. What happened to me is that the 3 white dots never stopped loading and my scene was never visible. I took this up with Mr. Mueller, and even he himself could not figure out what the problem is. My solution to this was to take a screenshot of my A-Frame scene in a different file, where it worked, and attach it to my website as a clickable link.</p>
+            <pre><code class="language-html">
+                <div class="col-lg-6">
+                    <div class="photoglasses">
+                        <a href="aframe.html"><img src="images/glasses.png" alt="PilotVision Glasses" width="90%" height="70%"></a>
+                        <p>PilotVision Glasses (click photo)</p>
+                    </div>
+                </div>
+            </code></pre>
+            <p>This resulted in a clickable image, where it would lead to a seperate [A-Frame file](https://lucah8212.github.io/sep10-freedom-project/aframe.html).</p>
+            <h3>Takeaways from presenting</h3>
+            <p>Presenting in front of my class was fairly easy for me, as I have learned how to speak to an audience well, which I know some people struggle with. It was killing me though, waiting to present the whole time because I was really excited to show off my product to my class, along with giving a clean presentation, in which I ended up going last which was quite funny. There are three takeaways that I have from presenting to my class.
+                <ol>
+                    <li>Practice your presentation</li>
+                    <li>We're improving, never degrading</li>
+                    <li>Eye contact is key</li>
+                </ol>
+            </p>
+            <h3>Next Steps</h3>
+            <p>If I were to redo this project, I would definetely procrastinate less and spend more time on my website instead of just doing nothing in class for the first week of the project which resulted in me staying up countless hours to try and get the project done.</p>
+
+
+            <a href="http://lucah8212.github.io/sep10-freedom-project">Webpage</a><br>
+            <a href="http://github.com/lucah8212/sep10-freedom-project">Code</a><br>
+
+            <img src="../img/fp.png" class="img-fluid project-img">
+
+
+            <div class="row">
+
+                <!--
+                <div class="col-sm-6">
+                    Use this to...
+                </div>
+                <div class="col-sm-6">
+                    ...make two columns
+                </div>
+                -->
+
+            </div>
+
+            <!-- Example code snippet below (uncomment to use) -->
+            <!-- https://github.com/hstatsep/other/blob/main/prism/prism.md#how-to-format-your-code-snippets -->
+
+            <!--
+            <pre><code class="language-css">
+                h1 {
+                    color: red;
+                }
+            </code></pre>
+            -->
+
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+        <a href="#" target="_blank" id="fork"><img src="../img/fork.png"></a><br>
+        <a href="https://hstatsep.github.io" target="_blank"><img src="https://hstatsep.github.io/img/hstatsep-logo-small.png" id="sep"></a>
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+</html>
