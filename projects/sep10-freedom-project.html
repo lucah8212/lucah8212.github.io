@@ -57,24 +57,24 @@
             <h3>Challenges</h3>
             <p>One major challenge that I faced during making my MVP was putting my A-Frame scene on my website, which gives a visual of my glasses. The goal was to have an embed of my A-Frame scene as an interactive image, next to the description of the glasses.</p>
             <pre><code class="language-html">
-                <div class="col-lg-6">
-                    <a-scene embedded>
+                &lt;div class="col-lg-6"&gt;
+                    &lt;a-scene embedded&gt;
 
-                        <a-entity camera wasd-controls look-controls position="0 1.6 5"></a-entity>
+                        &lt;a-entity camera wasd-controls look-controls position="0 1.6 5"&gt;&lt;/a-entity&gt;
 
-                    <!-- my a-frame scene -->
+                    &lt;!-- my a-frame scene --&gt;
 
-                    </a-scene>
-                </div>
+                    &lt;/a-scene&gt;
+                &lt;/div&gt;
             </code></pre>
             <p>This resulted in the embed of the A-Frame popping up, but the scene would never load. When you first enter a website with an A-Frame embed on it, it displys a blue screen with 3 loading white dots, and this usually would take a couple seconds for the scene to load. What happened to me is that the 3 white dots never stopped loading and my scene was never visible. I took this up with Mr. Mueller, and even he himself could not figure out what the problem is. My solution to this was to take a screenshot of my A-Frame scene in a different file, where it worked, and attach it to my website as a clickable link.</p>
             <pre><code class="language-html">
-                <div class="col-lg-6">
-                    <div class="photoglasses">
-                        <a href="aframe.html"><img src="images/glasses.png" alt="PilotVision Glasses" width="90%" height="70%"></a>
-                        <p>PilotVision Glasses (click photo)</p>
-                    </div>
-                </div>
+                &lt;div class="col-lg-6"&gt;
+                    &lt;div class="photoglasses"&gt;
+                        &lt;a href="aframe.html"&gt;&lt;img src="images/glasses.png" alt="PilotVision Glasses" width="90%" height="70%"&gt;&lt;/a>
+                        &lt;p&gt;PilotVision Glasses (click photo)&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
             </code></pre>
             <p>This resulted in a clickable image, where it would lead to a seperate <a href="https://lucah8212.github.io/sep10-freedom-project/aframe.html">A-Frame file</a>.</p>
             <h3>Takeaways from presenting</h3>
